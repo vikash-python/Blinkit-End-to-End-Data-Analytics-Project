@@ -10,7 +10,8 @@ conn = psycopg2.connect(
     host="localhost",
     database="blinkit_db",
     user="postgres",
-    password="NewPassword123",
+    password="DB PASSWORD",
+    
     port="5432"
 )
 
