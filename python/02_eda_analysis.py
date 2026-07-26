@@ -1,14 +1,14 @@
 import pandas as pd
 import psycopg2
-
-
-
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 conn = psycopg2.connect(
     host="localhost",
     database="blinkit_db",
     user="postgres",
-    password="DB PASSWORD",
+    password=os.getenv("DB_PASSWORD"),
     port="5432"
 )
 

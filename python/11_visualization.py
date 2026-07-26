@@ -2,19 +2,19 @@ import pandas as pd
 import psycopg2
 import matplotlib.pyplot as plt
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # -------------------------
 # Database Connection
 # -------------------------
-
 conn = psycopg2.connect(
     host="localhost",
     database="blinkit_db",
     user="postgres",
-    password="DB PASSWORD",
+    password=os.getenv("DB_PASSWORD"),
     port="5432"
 )
-
 project_folder = os.path.dirname(os.path.dirname(__file__))
 images_folder = os.path.join(project_folder, "images")
 os.makedirs(images_folder, exist_ok=True)
