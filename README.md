@@ -10,7 +10,7 @@ The project takes a raw, messy Kaggle dataset through a full pipeline: data clea
 
 | Executive Dashboard | Customer & Sales Analysis | Product & Inventory Analysis |
 |---|---|---|
-| ![Executive](images/dashboard_category_sales.png) | ![Customer](images/dashboard_sentiment.png) | ![Inventory](images/top_products.png) |
+| ![Executive](executive_dashboard.png) | ![Customer](customer_sales_analysis.png) | ![Inventory](product_inventory_analysis.png) |
 
 ---
 
